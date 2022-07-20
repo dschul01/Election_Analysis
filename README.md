@@ -12,23 +12,25 @@ The purpose of this project was to utilize Python to automate the task of readin
 * Winning candidate highlighted with respective bote count and percentage of votes
 
 ## Election Audit Results
-The following is a breakdown of the votes by county and candidate as well as highlighting county with largest turnout and winning candidate.
+The following is a breakdown of the votes by county and candidate as well as highlighting the county with largest turnout and winning candidate.
 
 * **Total Votes Cast**: 369,711
 
 * **County Votes**
-	|County|Vote Count|Vote Percentage
-	Jefferson|38,855|10.5%
-	Denver|306,055|82.8%
-	Arapahoe|24,801|6.7%
+	|County|Vote Count|Vote Percentage|
+	|------|----------|---------------|
+	|Jefferson|38,855|10.5%|
+	|Denver|306,055|82.8%|
+	|Arapahoe|24,801|6.7%|
 
 * **Largest County Turnout**: Denver with 306,055 votes
 
 * **Votes Per Candidate**
-	|Candidate|Vote Count|Vote Percentage
-	Charles Casper Stockham|85,213|23.0%
-	Diana DeGette|272,892|73.8%
-	Raymon Anthony Doane|11,606|3.1%
+	|Candidate|Vote Count|Vote Percentage|
+	|---------|----------|---------------|
+	|Charles Casper Stockham|85,213|23.0%|
+	|Diana DeGette|272,892|73.8%|
+	|Raymon Anthony Doane|11,606|3.1%|
 
 * **Winning Candidate**: Diana DeGette with 272,892 votes and 73.8% of the votes
 
