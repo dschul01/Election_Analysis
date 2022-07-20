@@ -16,7 +16,7 @@ The following is a breakdown of the votes by county and candidate as well as hig
 
 * **Total Votes Cast**: 369,711
 
-* **County Votes**
+* **County Votes**:
 	|County|Vote Count|Vote Percentage|
 	|------|----------|---------------|
 	|Jefferson|38,855|10.5%|
@@ -25,7 +25,7 @@ The following is a breakdown of the votes by county and candidate as well as hig
 
 * **Largest County Turnout**: Denver with 306,055 votes
 
-* **Votes Per Candidate**
+* **Votes Per Candidate**:
 	|Candidate|Vote Count|Vote Percentage|
 	|---------|----------|---------------|
 	|Charles Casper Stockham|85,213|23.0%|
@@ -33,6 +33,19 @@ The following is a breakdown of the votes by county and candidate as well as hig
 	|Raymon Anthony Doane|11,606|3.1%|
 
 * **Winning Candidate**: Diana DeGette with 272,892 votes and 73.8% of the votes
+
+All the data points above were calculated using Python code with a couple images provided below to illustrate how some of the calculations were derived and showing how results were also printed to the Terminal.
+
+**Largest County Turnout**:
+![Largest_County_Turnout_Calc_Sample.png](https://github.com/dschul01/Election_Analysis/blob/main/Resources/Largest_County_Turnout_Calc_Sample.png)
+
+**Winning Candidate**:
+
+![Winning_Candidate_Calc_Sample.png](https://github.com/dschul01/Election_Analysis/blob/main/Resources/Winning_Candidate_Calc_Sample.png)
+
+Additionally the results were written to the text file, [election_results.txt](https://github.com/dschul01/Election_Analysis/blob/main/Analysis/election_results.txt) via the code so the election commission can reference them as they need.
+
+
 
 
 There are two stocks, ENPH and RUN, over the period which are revealed as providing positive results YoY.  The code seen below makes it quite easy to visualize by highlighting the positive returns in green seen in the output.
