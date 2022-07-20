@@ -16,7 +16,7 @@ The following is a breakdown of the votes by county and candidate as well as hig
 
 * **Total Votes Cast**: 369,711
 
-* **County Votes**:
+* **Votes Per County**:
 	|County|Vote Count|Vote Percentage|
 	|------|----------|---------------|
 	|Jefferson|38,855|10.5%|
@@ -36,32 +36,17 @@ The following is a breakdown of the votes by county and candidate as well as hig
 
 All the data points above were calculated using Python code with a couple images provided below to illustrate how some of the calculations were derived and showing how results were also printed to the Terminal.
 
-**Largest County Turnout**:
+**Largest County Turnout Code Sample**:
 ![Largest_County_Turnout_Calc_Sample.png](https://github.com/dschul01/Election_Analysis/blob/main/Resources/Largest_County_Turnout_Calc_Sample.png)
 
-**Winning Candidate**:
+**Winning Candidate Code Sample**:
 
 ![Winning_Candidate_Calc_Sample.png](https://github.com/dschul01/Election_Analysis/blob/main/Resources/Winning_Candidate_Calc_Sample.png)
 
 Additionally the results were written to the text file, [election_results.txt](https://github.com/dschul01/Election_Analysis/blob/main/Analysis/election_results.txt) via the code so the election commission can reference them as they need.
 
-
-
-
-There are two stocks, ENPH and RUN, over the period which are revealed as providing positive results YoY.  The code seen below makes it quite easy to visualize by highlighting the positive returns in green seen in the output.
-![Formatting_Code.png](https://github.com/dschul01/stock-analysis/blob/main/Resources/Formatting_Code.png)
-![Positive_Returns_YoY.png](https://github.com/dschul01/stock-analysis/blob/main/Resources/Positive_Returns_YoY.png)
-### Refactoring Impacts
-The initial code was enhanced using an index for all the ticker's performance measurement loops and resulted in significant time reductions to run the code as seen in the images below.  The time differential would be even greater if the volume of stocks to analyze increased.
-![Refactored_Time_Impacts.png](https://github.com/dschul01/stock-analysis/blob/main/Refactored_Time_Impacts.png)
-## Summary
-### Advantages of Refactoring Code
-There are several advantages of refactoring code.  It leads to better quality code making it more manageable and cleaner for the original programmer or others who might need to update it in the future.  The process of refactoring will also help in finding bugs which might not have originally occurred when running initial use cases.  It also often reduces run times as it leads to removing unnecessary code.  
-
-The refactoring for this particular project resulted in all the advantages listed.  The original code had unnecessary lines of code which made the performance run over 6 times longer before refactoring.  The new code is cleaner and runs much quicker as seen in the Results above.
-  
-### Disadvantages of Refactoring Code
-There are also disadvantages of refactoring code.  Refactoring takes time and money. A programmer must go back through the code deciphering what it's doing and then use resources to refactor.  There are possibilities refactoring does not improve timeliness and could break other applications which depend on the source code being adjusted.
-
-The refactoring for this particular project resulted in the use of additional hours spent to create better quality code.  However, the resulting 6x time savings made it a worthwile endeavor.
+## Election Audit Summary
+This script can be utilized for any election as the code reads the output of election results which are in a CSV file.  The only necessity is that the object location within the CSV file remains consistent (e.g. ballots in first column, location in second column, etc.) The County column of the CSV file could be replaced with any region such as city or state.  I would suggest two changes to the code to prevent needing to customize the code for each election.
+1. The code could be modified to change the value and output for the 1st Index, currently holding the county string, to be more generic such as region.  All value, lists and dictionary references to county within the code would be adjusted to this generic label.
+2. The code could also be modified to identify if the objects in the CSV were in a different order than the original county data.  This would eliminate the dependency for the data files to be in the same object/column order as each region might submit their input files differently.  
 
