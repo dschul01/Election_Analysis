@@ -40,7 +40,6 @@ All the data points above were calculated using Python code with a couple images
 ![Largest_County_Turnout_Calc_Sample.png](https://github.com/dschul01/Election_Analysis/blob/main/Resources/Largest_County_Turnout_Calc_Sample.png)
 
 **Winning Candidate Code Sample**:
-
 ![Winning_Candidate_Calc_Sample.png](https://github.com/dschul01/Election_Analysis/blob/main/Resources/Winning_Candidate_Calc_Sample.png)
 
 Additionally the results were written to the text file, [election_results.txt](https://github.com/dschul01/Election_Analysis/blob/main/Analysis/election_results.txt) via the code so the election commission can reference them as they need.
